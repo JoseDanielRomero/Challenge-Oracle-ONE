@@ -1,0 +1,202 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contenedor {
+    height: 100%;
+    background-color: #E9ECF8;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-box {
+    width: 10%;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.main-content {
+    width: 60%;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.side-content {
+    width: 30%;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* ---------------- MAIN CONTENT ----------------*/
+
+#campo-texto {
+    background-color: transparent;
+    /* border: 1px solid gray; */
+    border: none;
+    height: 60%;
+    width: 90%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #0A3871;
+    resize: none;
+    padding-top: 3%;
+}
+
+#campo-texto::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+#campo-texto:focus{
+    outline: none;
+}
+
+.advice {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 150%;
+    color: #495057;
+}
+
+#alert-icon {
+    padding-right: 1%;
+}
+
+.button-box {
+    height: 10%;
+    width: 90%;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botones {
+    border-radius: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+}
+
+#boton-encriptar {
+    height: 80%;
+    width: 48.5%;
+    background-color: #0A3871;
+    color: white;
+}
+
+#boton-desencriptar {
+    height: 80%;
+    width: 48.5%;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+/* ---------------- SIDE CONTENT ----------------*/
+
+.side-box {
+    background-color: white;
+    height: 92%;
+    width: 90%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7.2%;
+    gap: 10%;
+}
+
+/* ---------------- SIDE CONTENT: SIN RESPUESTA ----------------*/
+
+#ilustracion {
+    width: 80%;
+}
+
+.title {
+    height: 5%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 130%;
+    color: #343A40;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+    padding: 0 6.5%;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 130%;
+    color: #495057;
+    text-align: center;
+    padding: 0 6.5%;
+}
+
+/* ---------------- SIDE CONTENT: CON RESPUESTA ----------------*/
+
+#answer {
+    height: 70%;
+    width: 85%;
+    /* border: 1px solid black; */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #495057;
+    /* padding-top: 6%; */
+}
+
+#boton-copiar {
+    height: 9%;
+    width: 85%;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
