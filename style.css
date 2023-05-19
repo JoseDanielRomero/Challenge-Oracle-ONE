@@ -152,10 +152,6 @@ html, body {
 
 /* ------------ SIDE CONTENT: SIN RESPUESTA ------------*/
 
-#empry-box {
-    display: none;
-}
-
 #ilustracion {
     width: 80%;
 }
@@ -190,10 +186,6 @@ html, body {
 
 /* ------------ SIDE CONTENT: CON RESPUESTA ------------*/
 
-#answer-box {
-    display: none;
-}
-
 #answer {
     height: 70%;
     width: 80%;
@@ -225,10 +217,6 @@ html, body {
 /* ---------------------------------- MEDIA QUERY: MOBILE ----------------------------------*/
 
 @media screen and (max-width: 480px) {
-
-    /* .contenedor {
-        background-color: red;
-    } */
 
     html, body {
         min-height: 100%;
