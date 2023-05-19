@@ -21,8 +21,8 @@ const diccionarioDesencriptado = {
 function copyToClipboard(text) {
     var sampleTextarea = document.createElement("textarea");
     document.body.appendChild(sampleTextarea);
-    sampleTextarea.value = text; //save main text in it
-    sampleTextarea.select(); //select textarea contenrs
+    sampleTextarea.value = text;
+    sampleTextarea.select();
     document.execCommand("copy");
     document.body.removeChild(sampleTextarea);
 }
