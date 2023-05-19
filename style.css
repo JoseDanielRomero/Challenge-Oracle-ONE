@@ -152,6 +152,10 @@ html, body {
 
 /* ------------ SIDE CONTENT: SIN RESPUESTA ------------*/
 
+#empry-box {
+    display: none;
+}
+
 #ilustracion {
     width: 80%;
 }
@@ -185,6 +189,10 @@ html, body {
 }
 
 /* ------------ SIDE CONTENT: CON RESPUESTA ------------*/
+
+#answer-box {
+    display: none;
+}
 
 #answer {
     height: 70%;
@@ -236,7 +244,7 @@ html, body {
     }
     
     .logo-box {
-        height: 17%;
+        height: 100px;
         width: 100%;
         /* border: 1px solid gray; */
         display: flex;
@@ -251,7 +259,7 @@ html, body {
     }
     
     .main-content {
-        height: 60%;
+        /* height: 60%; */
         width: 100%;
         /* border: 1px solid gray; */
         display: flex;
@@ -259,6 +267,7 @@ html, body {
         align-items: center;
         justify-content: flex-start;
         gap: 4%;
+        background-color: red;
     }
     
     .side-content {
@@ -277,7 +286,7 @@ html, body {
         background-color: transparent;
         /* border: 1px solid gray; */
         border: none;
-        height: 60%;
+        /* height: 60%; */
         width: 90%;
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -287,6 +296,10 @@ html, body {
         color: #0A3871;
         resize: none;
         padding-top: 3%;
+
+        min-height: 60px;
+        overflow-y: auto;
+        word-wrap:break-word
     }
 
     .button-box {
@@ -317,14 +330,14 @@ html, body {
     }
     
     #boton-encriptar {
-        height: 45%;
+        height: 100px;
         width: 100%;
         background-color: #0A3871;
         color: white;
     }
     
     #boton-desencriptar {
-        height: 45%;
+        height: 100px;
         width: 100%;
         background-color: transparent;
         border: 1px solid #0A3871;

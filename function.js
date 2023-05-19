@@ -38,7 +38,7 @@ function myFunction(){
 
 $(function () {
 
-    $('#answer-box').hide();
+    $('#empty-box').show();
 
     $('#boton-encriptar').click(function() {
 
@@ -67,3 +67,10 @@ $(function () {
     });
 
 })
+
+function adjustHeight(el){
+
+    if (screen.width < 768) {
+        el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "60px";
+    }
+}
