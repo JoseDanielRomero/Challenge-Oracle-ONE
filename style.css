@@ -270,6 +270,7 @@ html, body {
 
     .advice {
         padding-top: 30px;
+        padding-bottom: 15px;
     }
 
     .button-box {
@@ -316,7 +317,9 @@ html, body {
     /* ------ SIDE CONTENT: SIN RESPUESTA ------*/
 
     #empty-box {
-        height: 200px;
+        height: 170px;
+        padding-top: 20px;
+        margin-bottom: 20%;
     }
 
     .title {
@@ -339,11 +342,12 @@ html, body {
     }
 
     #answer-box {
-        margin-bottom: 30%;
+        margin-bottom: 20%;
     }
 
     #answer {
-        padding-top: 18px;
+        padding-top: 30px;
+        width: 85%
     }
 
 };
