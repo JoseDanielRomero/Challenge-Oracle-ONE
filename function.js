@@ -49,7 +49,17 @@ $(function () {
 
         let encriptacion = text.replace(/e|i|a|o|u/g, matched => diccionarioEncriptado[matched]);
 
-        $('#answer').html(encriptacion)
+        $('#answer').html(encriptacion);
+
+        // ----------------ADAPTANDO EL HEIGHT DE LA RESPUESTA----------------
+
+        console.log($('#campo-texto').css("height"));
+
+        let heightAdecuado = $('#campo-texto').css("height");
+
+        if (screen.width < 768) {
+            $('#answer').css("height", heightAdecuado);
+        }
 
     })
 
@@ -62,11 +72,23 @@ $(function () {
 
         let desencriptacion = text.replace(/enter|imes|ai|ober|ufat/g, matched => diccionarioDesencriptado[matched]);
 
-        $('#answer').html(desencriptacion)
+        $('#answer').html(desencriptacion);
+
+        // ----------------ADAPTANDO EL HEIGHT DE LA RESPUESTA----------------
+
+        console.log($('#campo-texto').css("height"));
+
+        let heightAdecuado = $('#campo-texto').css("height");
+
+        if (screen.width < 768) {
+            $('#answer').css("height", heightAdecuado);
+        }
 
     });
 
 })
+
+// ----------------FUNCION DE AUTOGROW DE TEXTAREA----------------
 
 function adjustHeight(el){
 
