@@ -55,7 +55,13 @@ $(function () {
 
         console.log($('#campo-texto').css("height"));
 
-        let heightAdecuado = $('#campo-texto').css("height");
+        let heightInicial = $('#campo-texto').css("height");
+
+        let heightSinPx = heightInicial.split('px');
+
+        let multiplicacion = heightSinPx[0] * 2
+
+        let heightAdecuado = multiplicacion + "px";
 
         if (screen.width < 768) {
             $('#answer').css("height", heightAdecuado);
@@ -78,7 +84,13 @@ $(function () {
 
         console.log($('#campo-texto').css("height"));
 
-        let heightAdecuado = $('#campo-texto').css("height");
+        let heightInicial = $('#campo-texto').css("height");
+
+        let heightSinPx = heightInicial.split('px');
+
+        let division = heightSinPx[0] / 2
+
+        let heightAdecuado = division + "px";
 
         if (screen.width < 768) {
             $('#answer').css("height", heightAdecuado);
